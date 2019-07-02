@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		/*body{
+			background-color: rgba(27,31,34,0.85);
+		}*/
+		/*h1{
+			font-size: 2.1rem;
+			line-height: 1.4;
+			letter-spacing: 0.5rem;
+			text-align: center;
+			color: white;
+			margin-top: 50px;
+	} */
+	.maindiv {
+		/*width: 50%;*/
+		width: 720px;
+		height: 480px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-image: url('_imagem/A1.jpg');
+		background-size: 100% 100%;
+		box-shadow: 10px 20px 50px 50px black;
+		animation:  slider 30s infinite linear;
+
+	}
+
+	@keyframes slider {
+		0%{background-image: url('_imagem/A1.jpg');}
+		25%{background-image: url('_imagem/A2.jpg');}
+		50%{background-image: url('_imagem/A3.jpg');}
+		75%{background-image: url('_imagem/A4.jpg');}
+		100%{background-image: url('_imagem/A5.jpg');}
+	}
+	</style>
+</head>
+<body>
+	<div class="maindiv">
+		
+	</div>
+
+</body>
+</html>

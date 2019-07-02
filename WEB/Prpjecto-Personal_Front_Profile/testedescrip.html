@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste de JS</title>
+	<script>
+		//function ta(){
+			//alert("Alarme tocou!");
+			//document.getElementById("al").src= "_imagem/alarm-1.png";
+		//}
+		//function das(){
+		//	document.getElementById("al").src = "_imagem/alarm.jpg";
+		//}
+		function ta(tipo){
+			if(tipo == 1){
+				arquivo ="_imagem/alarm-1.png";
+			}
+			if (tipo == 2) {
+				arquivo = "_imagem/alarm.jpg";
+			}
+			document.getElementById("al").src= arquivo;
+		}
+		
+</script>
+</head>
+<body>
+	<h1>Toca alarme</h1>
+<!--<img src="_imagem/alarm.jpg" onclick="ta()" />-->
+<img src="_imagem/alarm.jpg" id="al" onmousemove="ta(1)" onmouseout="ta(2)" />
+</body>
